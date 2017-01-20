@@ -12,7 +12,7 @@ describe 'Bootstrap Tour', ->
       $element = $(tour.getStep(i).element)
 
       $element
-      .popover('destroy')
+      .popover('dispose')
       .removeData('bs.popover')
       $element.remove()
 
@@ -218,15 +218,15 @@ describe 'Bootstrap Tour', ->
       duration: false
       delay: false
       template: '<div class="popover">
-        <div class="arrow"></div>
+        <div class="arrow popover-arrow"></div>
         <h3 class="popover-title"></h3>
         <div class="popover-content"></div>
         <nav class="popover-navigation">
           <div class="btn-group">
-            <button class="btn btn-sm btn-default" data-role="prev">&laquo; Prev</button>
-            <button class="btn btn-sm btn-default" data-role="next">Next &raquo;</button>
+            <button class="btn btn-sm btn-secondary" data-role="prev">&laquo; Prev</button>
+            <button class="btn btn-sm btn-secondary" data-role="next">Next &raquo;</button>
           </div>
-          <button class="btn btn-sm btn-default" data-role="end">End tour</button>
+          <button class="btn btn-sm btn-secondary" data-role="end">End tour</button>
         </nav>
       </div>'
       onShow: (tour) ->
@@ -1066,7 +1066,7 @@ describe 'Bootstrap Tour', ->
     @tour = new Tour
       template:
         '<div class="popover tour">
-          <div class="arrow"></div>
+          <div class="arrow popover-arrow"></div>
           <h3 class="popover-title"></h3>
           <div class="popover-content"></div>
           <div class="popover-navigation">
