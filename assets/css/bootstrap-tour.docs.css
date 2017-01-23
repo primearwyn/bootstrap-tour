@@ -1,5 +1,8 @@
 body {
   padding-bottom: 50px;
+  background: #FFFFFF;
+  font-family: 'Open Sans', sans-serif !important;
+  height: 100%;
 }
 
 #github {
@@ -13,6 +16,17 @@ body {
 
 .navbar {
   margin-bottom: 0;
+  background-color: #fff;
+  border: none;
+}
+
+.navbar-brand img {
+  height: 30px;
+  display: inline-block;
+}
+
+#home {
+  margin-top: 60px;
 }
 
 .masthead {
@@ -21,15 +35,26 @@ body {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 0 rgba(0,0,0,.1);
-  background-color: #3276b1;
-  background-image: -webkit-linear-gradient(top, #285e8e 0%, #3276b1 100%);
-  background-image: linear-gradient(to bottom, #285e8e 0%, #3276b1 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#285e8e', endColorstr='#3276b1', GradientType=0);
+  background: #eee no-repeat center;
+  background-image: url('../img/bg.jpg');
+  background-size: cover;
 }
+.masthead h1 {
+  font-size: 30px;
+  line-height: 1.4;
+  padding: 0;
+  margin: 0 0 10px;
+  color: white;
+  font-weight: 100;
+}
+
+.masthead p {
+  font-size: 20px;
+  color: white;
+}
+
 .masthead small {
-  font-size: 80%;
-  color: #ccc;
+  font-size: 14px;
 }
 
 /*

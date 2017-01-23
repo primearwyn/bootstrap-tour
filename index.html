@@ -10,10 +10,10 @@
     Bootstrap Tour
   
 </title>
-<link href="/components/bootstrap/dist/css/bootstrap.min.css?2016-08-06T07%3A17%3A00%2B01%3A00" rel="stylesheet">
-<link href="/assets/vendor/pygments-manni.css?2016-08-06T07%3A17%3A00%2B01%3A00" rel="stylesheet">
-<link href="/assets/css/bootstrap-tour.css?2016-08-06T07%3A17%3A00%2B01%3A00" rel="stylesheet">
-<link href="/assets/css/bootstrap-tour.docs.css?2016-08-06T07%3A17%3A00%2B01%3A00" rel="stylesheet">
+<link href="/components/bootstrap/dist/css/bootstrap.min.css?2017-01-23T16%3A49%3A15%2B01%3A00" rel="stylesheet">
+<link href="/assets/vendor/pygments-manni.css?2017-01-23T16%3A49%3A15%2B01%3A00" rel="stylesheet">
+<link href="/assets/css/bootstrap-tour.css?2017-01-23T16%3A49%3A15%2B01%3A00" rel="stylesheet">
+<link href="/assets/css/bootstrap-tour.docs.css?2017-01-23T16%3A49%3A15%2B01%3A00" rel="stylesheet">
 <link href="http://boostraptour.com/" rel="canonical">
 <!--[if lt IE 9]><script src="/components/html5shiv/dist/html5shiv.min.js"></script><![endif]-->
 <script>
@@ -32,14 +32,67 @@ ga('send', 'pageview');
   </head>
   <body>
     <a href="https://github.com/sorich87/bootstrap-tour" id="github"><img src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
-    <div id="navbar" class="navbar navbar-static-top">
+      <nav id="primary-nav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#primary-navbar-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="https://www.getchaperone.com/" title="Chaperone" rel="home"><img src="/assets/img/logo.png" alt="Chaperone"></a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="primary-navbar-collapse">
+        <div class="nav navbar-nav navbar-right">
+          <a href="https://app.getchaperone.com/register" class="btn btn-primary btn-outline navbar-btn">Get started for free</a>
+        </div>
+        <ul id="menu-header-menu" class="nav navbar-nav navbar-right">
+          <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.getchaperone.com/features/">Features</a></li>
+          <li class="menu-item menu-item-type-post_type menu-item-object-page"><a title="A few clicks to guide novices." href="https://www.getchaperone.com/pricing/">Pricing</a></li>
+          <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.getchaperone.com/knowledgebase/">Knowledgebase</a></li>
+          <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.getchaperone.com/blog/">Blog</a></li>
+          <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.getchaperone.com/contact-us/">Contact us</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+    <header id="home">
+  <div class="jumbotron masthead">
+    <h1>Bootstrap Tour</h1>
+    <p class="lead">
+      The easiest way to show people how to use your website.
+      <br><small>Not using Bootstrap? It works anyway!</small>
+    </p>
+    <p>
+      <button type="button" id="demo" class="btn btn-success btn-lg" data-demo>
+        <span class="glyphicon glyphicon-play"></span>
+        Start the demo
+      </button>
+    </p>
+    <ul class="social">
+      <li>
+        <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=sorich87&amp;repo=bootstrap-tour&amp;type=watch&amp;count=true" width="100" height="20" title="Star on GitHub"></iframe>
+      </li>
+      <li>
+        <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=sorich87&amp;repo=bootstrap-tour&amp;type=fork&amp;count=true" width="102" height="20" title="Fork on GitHub"></iframe>
+      </li>
+      <li class="tweet-btn">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://bootstraptour.com/" data-count="horizontal">Tweet</a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<div id="secondary-nav" class="navbar">
   <div class="container">
     <button type="button" class="navbar-toggle pull-right" data-toggle="collapse" data-target=".navbar-collapse">
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a href="/" class="navbar-brand">Bootstrap Tour</a>
     <div class="collapse navbar-collapse">
       <ul class="navbar-nav nav">
         <li  class="active">
@@ -59,32 +112,7 @@ ga('send', 'pageview');
   </div>
 </div>
 
-    <header id="home">
-  <div class="jumbotron masthead">
-    <h1>Bootstrap Tour</h1>
-    <p class="lead">
-      The easiest way to show people how to use your website.
-      <br><small>Not using Bootstrap? It works anyway!</small>
-    </p>
-    <p>
-      <button type="button" id="demo" class="btn btn-default btn-lg" data-demo>
-        <span class="glyphicon glyphicon-play"></span>
-        Start the demo
-      </button>
-    </p>
-    <ul class="social">
-      <li>
-        <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=sorich87&amp;repo=bootstrap-tour&amp;type=watch&amp;count=true" width="100" height="20" title="Star on GitHub"></iframe>
-      </li>
-      <li>
-        <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=sorich87&amp;repo=bootstrap-tour&amp;type=fork&amp;count=true" width="102" height="20" title="Fork on GitHub"></iframe>
-      </li>
-      <li class="tweet-btn">
-        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://bootstraptour.com/" data-count="horizontal">Tweet</a>
-      </li>
-    </ul>
-  </div>
-</header>
+
 <section id="usage">
   <div class="container">
     <div class="page-header">
@@ -92,30 +120,30 @@ ga('send', 'pageview');
     </div>
     <h3>Add the dependencies</h3>
     <p>If you are using Bootstrap, include <code>bootstrap-tour.min.css</code> and <code>bootstrap-tour.min.js</code>:</p>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"bootstrap.min.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"bootstrap-tour.min.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;bootstrap.min.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;bootstrap-tour.min.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span><span class="nt">&gt;</span>
 ...
-<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"jquery.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"bootstrap.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"bootstrap-tour.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre></figure>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;jquery.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;bootstrap.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;bootstrap-tour.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre></div>
     <p>Otherwise, just include <code>bootstrap-tour-standalone.min.css</code> and <code>bootstrap-tour-standalone.min.js</code>:</p>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"bootstrap-tour-standalone.min.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;bootstrap-tour-standalone.min.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span><span class="nt">&gt;</span>
 ...
-<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"jquery.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"bootstrap-tour-standalone.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre></figure>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;jquery.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;bootstrap-tour-standalone.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre></div>
     <h3>Setup your tour:</h3>
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// Instance the tour</span>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// Instance the tour</span>
 <span class="kd">var</span> <span class="nx">tour</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Tour</span><span class="p">({</span>
-  <span class="na">steps</span><span class="p">:</span> <span class="p">[</span>
+  <span class="nx">steps</span><span class="o">:</span> <span class="p">[</span>
   <span class="p">{</span>
-    <span class="na">element</span><span class="p">:</span> <span class="s2">"#my-element"</span><span class="p">,</span>
-    <span class="na">title</span><span class="p">:</span> <span class="s2">"Title of my step"</span><span class="p">,</span>
-    <span class="na">content</span><span class="p">:</span> <span class="s2">"Content of my step"</span>
+    <span class="nx">element</span><span class="o">:</span> <span class="s2">&quot;#my-element&quot;</span><span class="p">,</span>
+    <span class="nx">title</span><span class="o">:</span> <span class="s2">&quot;Title of my step&quot;</span><span class="p">,</span>
+    <span class="nx">content</span><span class="o">:</span> <span class="s2">&quot;Content of my step&quot;</span>
   <span class="p">},</span>
   <span class="p">{</span>
-    <span class="na">element</span><span class="p">:</span> <span class="s2">"#my-other-element"</span><span class="p">,</span>
-    <span class="na">title</span><span class="p">:</span> <span class="s2">"Title of my step"</span><span class="p">,</span>
-    <span class="na">content</span><span class="p">:</span> <span class="s2">"Content of my step"</span>
+    <span class="nx">element</span><span class="o">:</span> <span class="s2">&quot;#my-other-element&quot;</span><span class="p">,</span>
+    <span class="nx">title</span><span class="o">:</span> <span class="s2">&quot;Title of my step&quot;</span><span class="p">,</span>
+    <span class="nx">content</span><span class="o">:</span> <span class="s2">&quot;Content of my step&quot;</span>
   <span class="p">}</span>
 <span class="p">]});</span>
 
@@ -123,7 +151,7 @@ ga('send', 'pageview');
 <span class="nx">tour</span><span class="p">.</span><span class="nx">init</span><span class="p">();</span>
 
 <span class="c1">// Start the tour</span>
-<span class="nx">tour</span><span class="p">.</span><span class="nx">start</span><span class="p">();</span></code></pre></figure>
+<span class="nx">tour</span><span class="p">.</span><span class="nx">start</span><span class="p">();</span></code></pre></div>
     <p>Do you want to do more? <a href="api">Read the full documentation.</a></p>
   </div>
 </section>
@@ -155,12 +183,12 @@ ga('send', 'pageview');
   </div>
 </section>
 
-    <script src="/components/jquery/dist/jquery.min.js?2016-08-06T07%3A17%3A00%2B01%3A00"></script>
-<script src="/components/bootstrap/dist/js/bootstrap.min.js?2016-08-06T07%3A17%3A00%2B01%3A00"></script>
-<script src="/components/blueimp-md5/js/md5.min.js?2016-08-06T07%3A17%3A00%2B01%3A00"></script>
-<script src="/assets/vendor/jquery.smoothscroll.js?2016-08-06T07%3A17%3A00%2B01%3A00"></script>
-<script src="/assets/js/bootstrap-tour.js?2016-08-06T07%3A17%3A00%2B01%3A00"></script>
-<script src="/assets/js/bootstrap-tour.docs.js?2016-08-06T07%3A17%3A00%2B01%3A00"></script>
+    <script src="/components/jquery/dist/jquery.min.js?2017-01-23T16%3A49%3A15%2B01%3A00"></script>
+<script src="/components/bootstrap/dist/js/bootstrap.min.js?2017-01-23T16%3A49%3A15%2B01%3A00"></script>
+<script src="/components/blueimp-md5/js/md5.min.js?2017-01-23T16%3A49%3A15%2B01%3A00"></script>
+<script src="/assets/vendor/jquery.smoothscroll.js?2017-01-23T16%3A49%3A15%2B01%3A00"></script>
+<script src="/assets/js/bootstrap-tour.js?2017-01-23T16%3A49%3A15%2B01%3A00"></script>
+<script src="/assets/js/bootstrap-tour.docs.js?2017-01-23T16%3A49%3A15%2B01%3A00"></script>
 <script>
 window.twttr = (function (d,s,id) {
   var t, js, fjs = d.getElementsByTagName(s)[0];
@@ -169,7 +197,6 @@ window.twttr = (function (d,s,id) {
   return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
 }(document, "script", "twitter-wjs"));
 </script>
-<script src="//my.hellobar.com/8de0c45141ba6289e0a9d247b192ae3b42875f9d.js" type="text/javascript" charset="utf-8" async="async"></script>
 
   </body>
 </html>
